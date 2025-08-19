@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@utility container {  margin-inline: auto; }
+
+/* --------- variabls */
+
+@theme{
+  /* ---------- color */
+  --color-main:#0C0C0C;
+  /* --------- font */
+  --font-robot: "Roboto Serif", serif;
+  --font-dm:"DM Sans", sans-serif;
+}
