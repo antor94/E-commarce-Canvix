@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import './App.css'
 import Portfoliio from './components/Portfoliio'
 import Contact from './pages/Contact'
+import About from './pages/About'
 
 const App = () => {
   const myRoute = createBrowserRouter(createRoutesFromElements(
@@ -13,6 +14,7 @@ const App = () => {
       <Route path='/' element={<LayoutOne />}>
       <Route path='/portfolio' element={<Portfoliio />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/about' element={<About />} />
       </Route>
     </Route>
   ))
