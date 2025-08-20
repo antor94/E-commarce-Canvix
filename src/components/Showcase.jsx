@@ -6,6 +6,7 @@ import proimg4 from '../assets/images/proimg3.png'
 import CommonHead from './common/CommonHead'
 import ShowcaseCoomon from './common/ShowcaseCoomon'
 import { MdArrowForwardIos } from 'react-icons/md'
+import { Link } from 'react-router'
 
 
 const Showcase = () => {
@@ -31,7 +32,7 @@ const Showcase = () => {
                 <div className='mt-[151px] justify-end'>
                     <div className='flex justify-end'>
 
-                                    <button className='w-[248px]   rounded-[23px] bg-main  text-[20px] font-normal flex justify-center gap-[10px] font-dm text-[#fff] py-[11px]'> <span className='w-[28px] h-[28px] rounded-full flex justify-center items-center bg-[#fff] '><MdArrowForwardIos className='text-[#000]'  /></span>Start your Free Trial</button>
+                                    <Link to={'portfolio'}  className='w-[248px]   rounded-[23px] bg-main  text-[20px] font-normal flex justify-center gap-[10px] font-dm text-[#fff] py-[11px]'> <span className='w-[28px] h-[28px] rounded-full flex justify-center items-center bg-[#fff] '><MdArrowForwardIos className='text-[#000]'  /></span>Start your Free Trial</Link>
                     </div>
                     <div className='pt-[51px]'>
 

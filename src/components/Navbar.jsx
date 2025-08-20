@@ -19,7 +19,7 @@ const Navbar = () => {
                     <ul className='flex gap-[35px] items-center'>
                         <li ><Link to={'/'} className='text-[20px] font-normal font-dm text-main'  >Home</Link></li>
                         <li ><Link to={'/'} className='text-[20px] font-normal font-dm text-main'  >About</Link></li>
-                        <li ><Link to={'/'} className='text-[20px] font-normal font-dm text-main'  >Contact Us</Link></li>
+                        <li ><Link to={'/contact'} className='text-[20px] font-normal font-dm text-main'  >Contact Us</Link></li>
                     </ul>
                 </div>
                 {/* ------------- button */}
