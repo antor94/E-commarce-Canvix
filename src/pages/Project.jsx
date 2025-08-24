@@ -1,13 +1,22 @@
 import React from 'react'
 import projectImg from '../assets/images/projectbanner.png'
 import ProjectCommon from '../components/common/ProjectCommon'
+import projectimg1 from '../assets/images/project1.png'
+import projectimg2 from '../assets/images/project2.png'
+import projectimg3 from '../assets/images/project3.png'
+import CommonHead from '../components/common/CommonHead'
+import ShowcaseCoomon from '../components/common/ShowcaseCoomon'
+import showImg1 from '../assets/images/Rectangle1.png'
+import showImg2 from '../assets/images/Rectangle2.png'
+import showImg3 from '../assets/images/Rectangle3.png'
+
 
 const Project = () => {
   return (
     <>
     
 
-    <section id='project' className='pt-[26px]'>
+    <section id='project' className='pt-[26px] pb-[100px]'>
         <div className="container">
             <div id='project-row'>
 
@@ -52,11 +61,26 @@ When our power of choice is untrammeled and when nothing prevents us from being 
                 </div>
 
                 {/* -------- images */}
-                <div>
-                    <div className='w-[417px]'></div>
+                <div className='flex gap-[74px] justify-center pt-[80px] pb-[100px]'>
+                    <div className='w-[417px]'><img src={projectimg1} alt="project-img" /></div>
+                    <div className='w-[417px]'><img src={projectimg2} alt="project-img" /></div>
+                    <div className='w-[417px]'><img src={projectimg3} alt="project-img" /></div>
                 </div>
 
+{/* -------------- live project */}
+    <div><CommonHead comh2={'Recent Projects '} /></div>
+<div className='flex gap-[47px] justify-center pt-[80px]'>
+    <div className='w-[442px]'><ShowcaseCoomon showimg={showImg1} showh2={'Web UI design'} showp={'Creative  UI design'} /> </div>
+    <div className='w-[442px]'>
+    <ShowcaseCoomon showimg={showImg2} showh2={'To design Digital Strategy'} showp={'Social Media Marketing'} />
 
+    </div>
+    <div className='w-[442px]'>
+    <ShowcaseCoomon showimg={showImg3} showh2={'UI Design'} showp={'Creative Rebranding for logo'} />
+
+    </div>
+
+    </div>
 
 
 

@@ -1,26 +1,22 @@
 import React from "react";
 import { LuPencil } from "react-icons/lu";
 
-const ServiceCommon = () => {
+const ServiceCommon = ({serviceH2 , serviceP , serviceLogo}) => {
   return (
     <>
-      <div className="w-full max-w-[462px] h-auto min-h-[260px] md:h-[368px] px-6 md:pl-[45px] py-8 md:py-[45px] hover:bg-main hover:text-[#F4F4F4] duration-300 bg-[#F4F4F4] rounded-[20px] flex flex-col justify-between mx-auto">
-        <div className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-full hover:bg-[#F4F4F4] hover:text-black bg-[#000] flex justify-center items-center mb-6">
-          <LuPencil className="text-[#fff] text-xl md:text-2xl" />
-        </div>
+    <div className=" group"> 
+
+      <div className="w-[422px] bg-[#F4F4F4] rounded-[20px] py-[45px] pl-[45px] group-hover:bg-main duration-[.3s] group-hover:text-white">
+        <div className="w-[60px] h-[60px]  rounded-full  bg-[#000] flex justify-center items-center ">  {serviceLogo} </div>
         <div>
-          <div className="pt-6 md:pt-[62px] pb-3 md:pb-[15px]">
-            <h2 className="text-[20px] md:text-[25px] font-semibold font-robot text-main">
-              Content Marketing
-            </h2>
+          <div className="pt-[62px]">
+            <h2 className="text-[20px] md:text-[25px] font-semibold font-robot text-main">{serviceH2}</h2>
           </div>
           <div className="w-full max-w-[332px]">
-            <p className="text-[16px] md:text-[18px] font-normal font-dm">
-              Our team creates engaging and shareable content that resonates
-              with your audience, drives organic traffic
-            </p>
+            <p className="text-[16px] md:text-[18px] font-normal font-dm">{serviceP}</p>
           </div>
         </div>
+    </div>
       </div>
     </>
   );
