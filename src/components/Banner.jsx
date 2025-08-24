@@ -50,12 +50,12 @@ const Banner = () => {
                 </p>
               </div>
               {/* ------------- button */}
-              <button className="w-[248px] py-[11px] mt-[32px] mb-[181px] rounded-[23px] bg-[#fff] text-[20px] font-normal flex justify-center gap-[10px] font-dm text-main">
+              <Link to={'/project'} className="w-[248px] py-[11px] mt-[32px] mb-[181px] rounded-[23px] bg-[#fff] text-[20px] font-normal flex justify-center gap-[10px] font-dm text-main">
                 <span className="w-[24px] h-[24px]  rounded-full flex justify-center items-center bg-main ">
                   <MdArrowForwardIos className="text-[#fff] text-[14px] md:text-[18px]" />
                 </span>
                 Start your Free Trial
-              </button>
+              </Link>
               <h2 className="text-[16px] md:text-[18px] lg:text-[20px] font-semibold font-robot text-[#64CCC5]">
                 Trusted by Leading Brands
               </h2>
